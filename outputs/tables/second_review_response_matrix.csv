@@ -1,0 +1,11 @@
+concern,action,section_affected
+Too much ML/feature engineering,"Compressed feature section to key list + supplementary reference; renamed 'Predictive Modeling' to 'Predictive Validation'; removed 'machine learning' language","Method, Results"
+Graph distracts and appears circular,"Moved to 1 paragraph labeled 'Exploratory Structural Clustering'; figures 5-6 to supplementary; acknowledged circularity explicitly","Results, main.tex"
+Learning/block confounded and overemphasized,"Compressed to 1 descriptive paragraph with confound caveat at start; removed anti-learning detail from main text","Results, Discussion"
+CPT comparison too strong / no formal model fitted,"Added explicit caveat in Introduction, Discussion, and Limitations: 'no formal model comparison against CPT, TAX, priority heuristic, or IBL was performed'","Introduction, Discussion, Limitations, Conclusion"
+Trial-level CPC18 claims need careful handling (nested data),"Added limitation about trial-level nesting and need for mixed-effects models","Limitations"
+Table 4 (binary > probability > magnitude) is strongest contribution,"Made binary vs continuous comparison the central and longest Results subsection; featured in Abstract","Results, Abstract"
+Paper too broad / tries to do too much,"Focused on binary loss exposure as primary finding; dominance as control; transfer as validation; learning and graph as brief supporting","All sections"
+'78 features' emphasized,"Replaced with 'cognitive features spanning loss, risk, dominance, and salience' + supplementary reference","Method"
+Abstract not focused enough,"Revised to open with puzzle and center on binary > continuous finding","Abstract"
+No code/data availability,"Kept from 024B","Method"

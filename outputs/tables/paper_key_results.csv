@@ -1,0 +1,21 @@
+result_label,value,dataset,source_report,interpretation,caveat
+EV failure rate,0.249,choices13k,choices13k_ev_failure_analysis.md,EV fails to predict majority choice ~25% of the time,Problem-level majority definition
+EV failure rate,0.176,CPC18,cross_dataset_ev_failure_comparison.md,Lower rate partly reflects aggregation across learning trials,Aggregates 25 trials including post-feedback
+Trial-level EV failure block 1,0.351,CPC18,cpc18_learning_dynamics.md,Individual choices deviate from EV 35% without feedback,Block 1 = no feedback (confounded)
+Trial-level EV failure block 5,0.304,CPC18,cpc18_learning_dynamics.md,Experience reduces but does not eliminate failure,Block 5 = with feedback (confounded)
+Corr(ev_diff; bRate),-0.63,choices13k,choices13k_feature_summary.md,EV is strong but imperfect predictor,Pearson correlation
+Corr(ev_diff; mean_choice_B),-0.72,CPC18,cross_dataset_ev_failure_comparison.md,Stronger EV-choice link in CPC18,May reflect learning/aggregation
+Full logistic AUC,0.837,choices13k,predictive_feature_ablation.md,58 features substantially outperform EV-only,5-fold CV
+Full logistic AUC,0.804,CPC18,predictive_feature_ablation.md,Same model architecture works on CPC18,N=270 limits stability
+Cross-transfer AUC,0.786,choices13k→CPC18,predictive_feature_ablation.md,Features generalize across datasets,Different designs and populations
+GB ceiling AUC,0.879,choices13k,predictive_feature_ablation.md,~4pp nonlinear gains remain,Gradient boosting; not interpretable
+EV-only AUC,0.671,choices13k,predictive_feature_ablation.md,Baseline: EV alone is limited,2 features only
+ev_favored_has_loss coef,1.62,choices13k,predictive_feature_ablation.md,Strongest single predictor of EV failure,Standardized logistic coefficient
+any_dominance EV-failure fraction,0.004,both,graph_exploration_summary.md,Dominance is near-perfect protector,Only 0.4% failure when dominance present
+EV-failure graph density enrichment,1.9,both,graph_exploration_summary.md,Failure problems are more interconnected,No formal significance test
+Cross-dataset max similarity,0.997,both,graph_exploration_summary.md,Near-identical problem structure across datasets,Based on 15 engineered features
+Learning shift (ambiguity),-0.095,CPC18,cpc18_learning_dynamics.md,Ambiguity shows largest learning effect,Block/feedback confounded
+Anti-learning GameIDs,84/256,CPC18,cpc18_learning_dynamics.md,33% of problems worsen with experience,Concentrated in ev_max_conflict
+Loss group AUC gain,+0.14,choices13k,predictive_feature_ablation.md,Loss features are most valuable single group,Over Basic model (9 features)
+Cross-dataset similarity edges,1538,both,graph_prototype_summary.md,Structural bridges exist between datasets,k=10 NN; arbitrary threshold
+ev_favored_has_loss hub fraction,0.379,both,graph_exploration_summary.md,38% of connected problems are EV-failure,vs 24% base rate

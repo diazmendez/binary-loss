@@ -1,0 +1,3 @@
+dataset,n_problems,n_consistent,n_inconsistent,ev_failure_rate,n_ev_ties,n_observed_ties,mean_observed_B_rate,corr_ev_diff_choice
+choices13k,14568,10566,3509,24.930728241563056,469,25,0.5185634280091963,-0.6280184905712949
+cpc18,270,211,45,17.578125,14,0,0.4804156625514403,-0.7165693798099142

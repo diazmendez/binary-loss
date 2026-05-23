@@ -1,0 +1,5 @@
+model,predictors,mean_auc,std_auc
+Binary only,"ev_abs_diff, ev_favored_has_loss",0.7376230302208879,0.009934442669518689
+Probability only,"ev_abs_diff, prob_loss_ev_favored",0.6687282993412922,0.005765527386334561
+Magnitude only,"ev_abs_diff, expected_loss_ev_favored",0.6633620831703247,0.002675291091161283
+Full loss,"ev_abs_diff, ev_favored_has_loss, prob_loss_ev_favored, expected_loss_ev_favored",0.7913412063872602,0.010099545761596704

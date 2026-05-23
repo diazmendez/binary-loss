@@ -1,0 +1,2 @@
+statistic,observed,null_mean,null_std,null_p025,null_p975,p_value,n_permutations
+both_endpoints_ev_failure_fraction,0.12536730017522577,0.060876486049332795,0.0007363046110106947,0.05950262838657501,0.06241440894999326,0.0,1000

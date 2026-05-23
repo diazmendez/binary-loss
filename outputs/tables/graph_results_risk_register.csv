@@ -1,0 +1,8 @@
+risk,severity,affected_tracks,mitigation,status
+Label leakage in Track C failure_density,High,C,Recomputed fold-safe: AUC dropped from 0.8609 to 0.8492,mitigated
+Retrieval may not beat flat-feature baseline,Medium,D,Compared: retrieval r=0.7629 vs flat r=0.7558,verified
+Cluster instability across seeds,Medium,E,Multi-seed ARI=0.9779,stable
+Covariate imbalance in matched pairs,Medium,F,Checked standardized diffs on 4 confounders. Balance OK: False,imbalanced
+Circularity: similarity features include ev_diff/loss,Medium,"A, B, D",Track A ablation showed outcome-only AUC=0.61 (fails). Signal requires loss/EV features in graph construction.,acknowledged — not circular but feature-dependent
+Small N for CPC18 retrieval (n=92 with cross-edges),Low,D,92/270 CPC18 problems have cross-dataset neighbors. Results limited to this subset.,acknowledged
+"Embedding captures feature similarity, not independent topology",Medium,B,"Graph is built from feature similarity. Embedding encodes relational structure of features, not raw topology.","acknowledged — claim is about relational encoding, not independent discovery"

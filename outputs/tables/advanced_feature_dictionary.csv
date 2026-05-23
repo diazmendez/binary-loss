@@ -1,0 +1,64 @@
+feature_name,group,definition,type,can_be_nan
+variance_A,risk,Σ pᵢ(vᵢ - EV_A)²,numeric,No
+variance_B,risk,Σ pᵢ(vᵢ - EV_B)²,numeric,No
+std_A,risk,√variance_A,numeric,No
+std_B,risk,√variance_B,numeric,No
+cv_A,risk,std_A / |EV_A|; NaN if EV≈0,numeric,Yes (EV≈0)
+cv_B,risk,std_B / |EV_B|; NaN if EV≈0,numeric,Yes (EV≈0)
+range_A,risk,max_A - min_A,numeric,No
+range_B,risk,max_B - min_B,numeric,No
+variance_diff,risk,variance_A - variance_B,numeric,No
+std_diff,risk,std_A - std_B,numeric,No
+range_diff,risk,range_A - range_B,numeric,No
+riskier_option,risk,A/B/equal by variance,categorical,No
+ev_risk_conflict,risk,higher_ev ≠ riskier_option,boolean,No
+has_loss_A,loss,any outcome < 0 in A,boolean,No
+has_loss_B,loss,any outcome < 0 in B,boolean,No
+prob_loss_A,loss,Σ pᵢ where vᵢ < 0 in A,numeric,No
+prob_loss_B,loss,Σ pᵢ where vᵢ < 0 in B,numeric,No
+expected_loss_A,loss,Σ pᵢvᵢ where vᵢ < 0 in A,numeric,No
+expected_loss_B,loss,Σ pᵢvᵢ where vᵢ < 0 in B,numeric,No
+min_negative_A,loss,min negative outcome in A (0 if none),numeric,No
+min_negative_B,loss,min negative outcome in B (0 if none),numeric,No
+is_mixed_A,loss,A has both positive and negative outcomes,boolean,No
+is_mixed_B,loss,B has both positive and negative outcomes,boolean,No
+any_loss,loss,either option has loss,boolean,No
+both_have_loss,loss,both options have loss,boolean,No
+loss_asymmetry,loss,"one option has loss, other doesn't",boolean,No
+ev_favored_has_loss,loss,higher-EV option has negative outcome,boolean,No
+max_favored_has_loss,loss,higher-max option has negative outcome,boolean,No
+prob_loss_diff,loss,prob_loss_A - prob_loss_B,numeric,No
+expected_loss_diff,loss,expected_loss_A - expected_loss_B,numeric,No
+skewness_A,skewness,probability-weighted 3rd moment of A,numeric,Yes (variance=0)
+skewness_B,skewness,probability-weighted 3rd moment of B,numeric,Yes (variance=0)
+upside_distance_A,skewness,max_A - EV_A,numeric,No
+upside_distance_B,skewness,max_B - EV_B,numeric,No
+downside_distance_A,skewness,EV_A - min_A,numeric,No
+downside_distance_B,skewness,EV_B - min_B,numeric,No
+upside_ratio_A,skewness,upside/(upside+downside) for A,numeric,No
+upside_ratio_B,skewness,upside/(upside+downside) for B,numeric,No
+skewness_diff,skewness,skewness_A - skewness_B,numeric,Yes
+upside_ratio_diff,skewness,upside_ratio_A - upside_ratio_B,numeric,No
+A_dominates_B,dominance,A FOSD-dominates B,boolean,No
+B_dominates_A,dominance,B FOSD-dominates A,boolean,No
+any_dominance,dominance,either option dominates,boolean,No
+dominant_option,dominance,A/B/none,categorical,No
+ev_matches_dominance,dominance,EV agrees with dominance (or none),boolean,No
+prob_best_outcome_A,salience,P(max outcome) in A,numeric,No
+prob_best_outcome_B,salience,P(max outcome) in B,numeric,No
+prob_worst_outcome_A,salience,P(min outcome) in A,numeric,No
+prob_worst_outcome_B,salience,P(min outcome) in B,numeric,No
+has_rare_high_gain_A,salience,max_A>0 and P(max_A)≤0.10,boolean,No
+has_rare_high_gain_B,salience,max_B>0 and P(max_B)≤0.10,boolean,No
+has_rare_loss_A,salience,min_A<0 and P(min_A)≤0.10,boolean,No
+has_rare_loss_B,salience,min_B<0 and P(min_B)≤0.10,boolean,No
+max_ratio,salience,max_B / max_A (NaN if max_A≤0),numeric,Yes (max_A≤0)
+best_outcome_option,salience,who has higher max,categorical,No
+worst_outcome_option,salience,who has lower min,categorical,No
+rare_high_gain_option,salience,A/B/both/neither,categorical,No
+rare_loss_option,salience,A/B/both/neither,categorical,No
+salience_conflict,salience,best_outcome ≠ worst_outcome option,boolean,No
+ev_abs_diff,similarity,|ev_A - ev_B|,numeric,No
+range_overlap,similarity,"normalized range overlap [0,1]",numeric,No
+n_shared_values,similarity,count of shared outcome values,numeric,No
+total_outcomes,similarity,n_outcomes_A + n_outcomes_B,numeric,No

@@ -1,0 +1,8 @@
+metric,dataset,evaluation,value,ci_lower,ci_upper,n,method
+EV failure rate,choices13k,problem-level,0.25799905004533874,0.25240443717775046,0.2636739325711615,23159,Wilson
+EV failure rate,CPC18,problem-level,0.17578125,0.13404604842154846,0.22710285847960257,256,Wilson
+Trial-level EV failure block 1,CPC18,trial-level,0.35283174672067896,0.3470407835064543,0.35864998010522975,26030,"Wilson (clustered, conservative)"
+Trial-level EV failure block 5,CPC18,trial-level,0.30494812403549376,0.29939205656458645,0.3105771438678123,26030,"Wilson (clustered, conservative)"
+Full logistic AUC,choices13k,5-fold CV,0.7443423482387042,0.7383479941142044,0.7508976846846854,23159,bootstrap predictions
+Cross-transfer AUC,choices13k→CPC18,"train c13k, test CPC18",0.7277514481305951,0.6419313016407411,0.8107926230097545,256,bootstrap test set
+Full logistic AUC,CPC18,10-fold CV,0.7549236440231701,0.6820205587234943,0.8249125908597958,256,bootstrap predictions

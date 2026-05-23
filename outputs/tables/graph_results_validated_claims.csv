@@ -1,0 +1,8 @@
+claim,original_value,validated_value,category,valid,risk_level,notes,recommended_wording,placement
+Graph position predicts EV failure (AUC 0.86),0.86,0.8492,transductive (corrected to fold-safe),True,medium,Leakage inflation: +0.0117. Topology-only AUC: 0.6121,"Graph-position features predict EV failure (AUC = 0.85, fold-safe)",main text
+Topology-only position features predict EV failure,,0.6121,behavior-free,True,low,"Uses only embedding_density, degree, boundary_score, dist_to_dom",Topology-only graph features predict EV failure (AUC = 0.61),supplement
+Spectral embedding predicts EV failure (AUC 0.79),0.79,0.7882,behavior-free,True,low,Adjacency uses behavioral labels: False. Embedding is topology-derived.,Behavior-free spectral embedding predicts EV failure (AUC = 0.79),main text
+3/5 embedding methods achieve AUC >= 0.75,3/5,3/5 (from spec 032),behavior-free,True,low,"Spectral, RW P^3, Diffusion P^5 all >= 0.75. Signal is robust across methods.",The embedding signal is robust: 3 of 5 methods achieve AUC >= 0.75,main text
+Cross-dataset retrieval r=0.76,0.76,0.7629,label-aware (proper CV not applicable — cross-dataset),True,low,"EV-only r=-0.6352, flat r=0.7558. Beats EV: True, beats flat: True",Graph retrieval predicts CPC18 behavior (r = 0.76),main text
+4 interpretable participant clusters,4,4,label-aware (proper CV),True,low,"Mean ARI=0.9779, sizes=[188, 355, 173, 210]",Participant clusters are stable (ARI = 0.98),main text
+Matched counterfactuals: loss effect attenuates after matching,p=0.078,n=224 pairs,label-aware (graph-based matching),False,medium,Balance OK: False. N pairs: 224,Matching quality insufficient for causal claims,supplement

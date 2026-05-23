@@ -1,0 +1,11 @@
+reviewer_concern,section_affected,action_taken,spec_024A_result,status
+Loss aversion repackaged,"Introduction, Discussion, Results","Added 3-level distinction (loss aversion vs loss attention vs binary presence); binary vs continuous AUC comparison; controlled regression showing β=0.84 survives controls","β=0.84 [0.80,0.88] p<.001; AUC 0.738 > 0.669/0.663",Addressed
+No inferential statistics,"Results, Tables","Added 95% CIs for all key rates; bootstrap CIs for AUCs; controlled regression p-values; permutation test p-value","All p<.001; CIs computed for all headline numbers",Addressed
+Graph circular,"Results (Graph), Limitations","Added permutation test (1000 shuffles); acknowledged circularity explicitly; reframed as convergent evidence","p<.001; observed 0.125 vs null 0.061±0.001",Addressed
+Dominance = easy problems,"Results, Discussion","Added ev_abs_diff control; removed 'cognitive competence' framing; reframed as 'structurally clear regime'","β=−1.51 [−1.70,−1.37] after ev_abs_diff control",Addressed
+Only 8 references,"All sections","Expanded to 19 references: priority heuristic, salience theory, regret theory, D-E gap, IBL, configural weight, probability weighting",—,Addressed
+No CPT comparison,Discussion,"Added paragraph discussing binary vs CPT prediction; noted that CPT predicts sensitivity to probability/magnitude but data show binary dominates",—,Addressed
+Too broad scope,"Introduction, Conclusion","Tightened: loss exposure is primary finding; dominance, experience, graph are supporting analyses",—,Addressed
+Learning language causal,"Results (Learning), Limitations","Renamed to 'Changes Across Blocks'; confound caveat at start; replaced 'anti-learning' with 'experience-associated worsening'",—,Addressed
+No code/data statement,Method,"Added Data and Code Availability subsection with URLs for choices13k and CPC18",—,Addressed
+Abstract not engaging,Abstract,"Revised to open with puzzle: 'Why do people reject options that maximize expected value?'; includes key inferential results",—,Addressed

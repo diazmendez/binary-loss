@@ -1,0 +1,9 @@
+figure_id,title,section,type,priority,data_source,existing_plot,new_code_needed,in_main_text
+1,Dataset and Common Representation Schematic,Data Sources,diagram,Medium,,none,No (design tool),No
+2,EV Failure Rates and Correlation,EV Failure Baseline,two-panel bar+scatter,High,cross_dataset_summary.csv,cross_dataset_ev_failure_rates.png + cross_dataset_ev_vs_choice.png,Minor (combine panels),Yes
+3,Feature Ablation Performance,Beyond-EV Features,grouped bar chart,High,feature_ablation_model_comparison.csv,feature_ablation_performance.png,Minor (styling),Yes
+4,Loss and Dominance Effects,Beyond-EV Features,two-panel grouped bar,High,graph_feature_hubs.csv + parquets,none,Yes,Yes
+5,CPC18 Learning Dynamics,Learning and Experience,line chart with stratification,High,cpc18_block_level_choice.csv,cpc18_ev_failure_by_block.png,Minor (add stratification),Yes
+6,Graph EV-Failure Clustering,Graph Representation,two-panel bar,High,graph_exploration_summary.md + graph_feature_hubs.csv,none,Yes,Yes
+7,Cross-Dataset Graph Bridge,Graph Representation,network visualization,Medium,graph_cross_dataset_neighbors.csv,none,Yes,Maybe
+8,Example Problem Pairs,Features/Discussion,problem structure diagram,Medium,choices13k_common.parquet,none,Yes,Maybe

@@ -1,0 +1,5 @@
+comparison,feature,n_pairs,mean_brate_diff_matched,raw_brate_diff,p_value,significant
+Loss exposure,ev_favored_has_loss,224,0.0164,0.0274,0.078147,False
+Dominance,any_dominance,17,-0.079,0.05,0.20942,False
+Rare high gain,has_rare_high_gain_B,26423,0.0576,0.1082,0.0,True
+Ambiguity,ambiguity,43450,0.0491,0.0492,0.0,True

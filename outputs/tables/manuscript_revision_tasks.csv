@@ -1,0 +1,17 @@
+task_id,section,issue,type,priority,suggested_fix,estimated_effort
+1,Introduction,Theoretical contribution unclear — reads as loss aversion repackaged,required,high,"Add 2 paragraphs distinguishing option-level loss avoidance from prospect theory outcome-level loss aversion. Introduce loss-attention framing with testable predictions.",medium
+2,All,Only 8 references — unacceptable for journal paper in mature field,required,high,"Add 15-20 references: priority heuristic, regret theory, description-experience gap, instance-based learning, probability weighting, salience theory, configural weight models.",medium
+3,Results,No inferential statistics for key claims,required,high,"Add bootstrap CIs for AUC values. Add proportion test or chi-square for 38% vs 25% failure rate difference. Add CI for cross-transfer AUC.",medium
+4,Graph section,Circularity — graph built from same features as regression,required,high,"Either add permutation test for 1.9x density ratio or demote graph to supplementary material with 1 paragraph in main text.",medium
+5,Discussion,Dominance 'cognitive competence' may be confounded with problem easiness,required,high,"Check whether dominance is confounded with ev_abs_diff. If yes soften claim. If no state explicitly that dominance adds beyond EV difference.",small
+6,Method,No code/data availability statement,required,medium,"Add paragraph: data publicly available at [URLs]. Analysis code available at [GitHub/OSF].",small
+7,Learning section,Interpretive causal language despite block/feedback confound,required,medium,"Rename to 'Changes Across Blocks'. Replace 'learning' with 'improvement'. Reduce causal framing.",small
+8,Abstract,Opens with method not puzzle,required,medium,"Rewrite first sentence as question: 'Why do people reject options that maximize expected value?'",small
+9,Discussion,No comparison to CPT predictions,required,medium,"Add paragraph discussing whether CPT with standard parameters predicts the same pattern. Note that binary presence vs probability-weighted magnitude is the key distinction.",medium
+10,Results/Discussion,Anti-learning finding underexplored,required,medium,"Give anti-learning more prominence — it's the most novel finding. Consider a dedicated subsection.",small
+11,Graph section,Adds length without proportional insight,optional,medium,"Move to supplementary. Keep 1 paragraph + Figure 5 in main text. Remove Figure 6 from main text.",medium
+12,Figure 6,Single cross-dataset example is anecdotal,optional,medium,"Replace with aggregate statistic: fraction of cross-dataset neighbors sharing EV-failure status vs random baseline.",small
+13,Table 3,Redundant with text,optional,low,"Remove or move to supplementary materials.",small
+14,Introduction,Could be more engaging,optional,low,"Open with a concrete example problem showing loss-driven EV failure before the theoretical framing.",medium
+15,Method,78 features may overwhelm reader,optional,low,"Add summary figure of feature groups or move full feature list to appendix.",small
+16,Discussion,Practical implications could be expanded,optional,low,"Add 2-3 sentences on decision support applications.",small

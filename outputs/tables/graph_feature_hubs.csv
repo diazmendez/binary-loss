@@ -1,0 +1,10 @@
+feature,total_degree,ev_failure_degree,ev_failure_fraction,group
+ev_favored_has_loss,6341,2405,0.3792777164485097,loss
+ambiguity,2849,936,0.3285363285363285,ambiguity
+ev_max_conflict,6004,1899,0.3162891405729514,conflict
+loss_asymmetry,5442,1547,0.2842704887908857,loss
+has_safe_option_B,245,66,0.2693877551020408,safety
+ev_risk_conflict,7150,1687,0.23594405594405593,conflict
+has_safe_option_A,8320,1784,0.2144230769230769,safety
+salience_conflict,4906,688,0.1402364451691806,conflict
+any_dominance,2506,11,0.004389465283320032,dominance
